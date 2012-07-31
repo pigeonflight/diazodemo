@@ -13,14 +13,15 @@
 
     <!-- REPLACE the TITLE -->
     <replace theme="/html/head/title" content="/html/head/title" /> 
-    
+    /html/head/meta[3]
     <before theme-children="/html/head" 
         content="/html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
 
     <replace css:theme-children="header h1">
          <xsl:value-of select="//*[@id='portal-logo']/@title"/>
     </replace>
-
-
+    <replace css:theme-children="header h2">
+          <xsl:value-of select="/html/head/meta[3]/@content"/>
+    </replace>
 
 </rules>
