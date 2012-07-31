@@ -21,7 +21,7 @@
          <xsl:value-of select="//*[@id='portal-logo']/@title"/>
     </replace>
     <replace css:theme-children="header h2">
-          <xsl:value-of select="/html/head/meta[3]/@content"/>
+          <xsl:value-of select="/html/head/meta[@name='description']/@content"/>
     </replace>
 
 </rules>

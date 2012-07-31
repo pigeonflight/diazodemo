@@ -1,0 +1,3 @@
+- consider the pros and cons of sunburst unless there's something
+you need to inherit from sunburst
+- some benchmarking might be good
