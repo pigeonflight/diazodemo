@@ -14,15 +14,12 @@
     <!-- REPLACE the TITLE -->
     <replace theme="/html/head/title" content="/html/head/title" /> 
     
-    <prepend theme="/html/head" 
+    <before theme-children="/html/head" 
         content="/html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
 
-    <!--<xsl:variable name="sitetitle" select="//*[@id="portal-logo"]/@title"/>
-    <copy css:theme="header h1">
-         <xsl:value-of select="$sitetitle"/>
-    </copy>
--->
-
+    <replace css:theme-children="header h1">
+         <xsl:value-of select="//*[@id='portal-logo']/@title"/>
+    </replace>
 
 
 
