@@ -10,6 +10,9 @@
     <!-- MAIN CONTENT area -->
     <replace css:theme-children="#main_content"
      css:content-children="#content"/> 
+     
+    <replace css:theme="title"
+     css:content="title"/> 
     
     <prepend theme="/html/head" 
         content="/html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
