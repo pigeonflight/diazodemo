@@ -3,25 +3,38 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-
-    <theme href="http://pigeonflight.github.com/diazodemo/"
+    <!-- IDENTIFY THE THEME HTML TEMPLATE -->
+    <theme href="http://pigeonflight.github.com/diazodemo/index.html"
          css:if-content="#visual-portal-wrapper"/>
 
-    <!-- MAIN CONTENT area -->
-    <replace css:theme-children="#main_content"
-     css:content-children="#content"/> 
-
-    <!-- REPLACE the TITLE -->
+    <!-- * METADATA * -->
+    <!-- REPLACE THE TITLE -->
     <replace theme="/html/head/title" content="/html/head/title" /> 
-    /html/head/meta[3]
+
+    <!-- ADD STYLE, SCRIPT and META TAGS from CONTENT -->
     <before theme-children="/html/head" 
         content="/html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
 
+
+    <!-- * MAIN CONTENT * -->
+    <replace css:theme-children="#main_content"
+     css:content-children="#content"/> 
+
+    <!-- NAVIGATION moved to the FOOTER -->
+    <replace css:theme-children="footer .ribbon-inner"
+        css:content="#portal-globalnav" />
+
+    <drop css:content="#portal-globalnav" attributes="id" />
+
+
+    <!-- * CUSTOM HEADER * -->
     <replace css:theme-children="header h1">
          <xsl:value-of select="//*[@id='portal-logo']/@title"/>
     </replace>
     <replace css:theme-children="header h2">
-          <xsl:value-of select="/html/head/meta[@name='description']/@content"/>
+          <xsl:value-of 
+             select="/html/head/meta[@name='description']/@content"/>
     </replace>
+
 
 </rules>
