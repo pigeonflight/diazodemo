@@ -16,3 +16,15 @@ font-weight: bold;
 border-radius: 8px;
 }
 .hidden{display:none}
+
+#theme_panel {
+position: absolute;
+top: 0px;
+right: 200px;
+width: 50%;
+background: white;
+}
+
+#theme_panel button {
+float: right;
+}
