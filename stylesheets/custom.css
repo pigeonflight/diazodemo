@@ -16,7 +16,12 @@ font-weight: bold;
 border-radius: 8px;
 }
 .hidden{display:none}
-
+.shadowed {
+opacity: .1;
+}
+.shadowed:hover {
+opacity: 1;
+}
 #theme_panel {
 position: absolute;
 top: 0px;
