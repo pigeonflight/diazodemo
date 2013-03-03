@@ -23,6 +23,7 @@ top: 0px;
 right: 200px;
 width: 50%;
 background: white;
+z-index:100;
 }
 
 #theme_panel button {
