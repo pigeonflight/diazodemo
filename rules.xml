@@ -39,10 +39,9 @@
         <!-- utility to get back to the theming panel -->
         <a id="adjust-theme" href="../../../../@@theming-controlpanel">adjust theme</a>
         <form method="post" action="../../../../@@theming-controlpanel">
-                                    <input type="hidden" name="_authenticator" value="eece8233974f4811cfdf6fc3df17998703331376">
-                                    <!--<input type="hidden" name="themeName" value="example">-->
-                                    
-                                    <button type="submit" name="form.button.Disable">Deactivate</button>
+            <input type="hidden" name="_authenticator" value="eece8233974f4811cfdf6fc3df17998703331376">
+            <!-- <input type="hidden" name="themeName" value="example"> -->
+            <button type="submit" name="form.button.Disable">Deactivate</button>
         </form>
     </after>
 
