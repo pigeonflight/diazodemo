@@ -37,7 +37,7 @@
     </replace>
     <after css:theme="#forkme_banner">
         <!-- utility to get back to the theming panel -->
-        <a id="adjust-theme" href="../../../../@@theming-controlpanel">theme controlpanel</a>
+        <a id="adjust-theme" class="shadowed" href="../../../../@@theming-controlpanel">theme controlpanel</a>
         
     </after>
 
