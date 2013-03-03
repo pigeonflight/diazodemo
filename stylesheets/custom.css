@@ -23,12 +23,12 @@ opacity: .1;
 opacity: 1;
 }
 #theme_panel {
-position: absolute;
+position: fixed;
 top: 0px;
-right: 200px;
-width: 50%;
+right: 0px;
+width: auto;
 background: white;
-z-index:100;
+z-index: 100;
 }
 
 #theme_panel button {
