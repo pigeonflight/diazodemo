@@ -36,7 +36,8 @@
              select="/html/head/meta[@name='description']/@content"/>
     </replace>
     <after css:theme="#forkme_banner">
-        <a id="adjust-theme" href="@@theming-controlpanel">adjust theme</a>
+        <!-- utility to get back to the theming panel -->
+        <a id="adjust-theme" href="../../../../@@theming-controlpanel">adjust theme</a>
     </after>
 
 </rules>
