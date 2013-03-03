@@ -5,3 +5,13 @@ margin: 0px;
 footer span.ribbon-inner ul a {
 font-size: 9px;
 }
+#adjust-theme {
+position: fixed;
+top: 4px;
+right: 19px;
+color: white;
+background: red;
+padding: 3px 5px;
+font-weight: bold;
+border-radius: 8px;
+}
